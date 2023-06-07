@@ -7,12 +7,14 @@ module.exports.plugin = (on, config) => {
 };
 
 module.exports.lifecycle = () => {
+    console.log("do we ever get here?"
   fs.appendFileSync('./logging/logfile.txt', 'module.exports.lifecycle');
 };
 
 
 function helloWorld() {
   console.log('Hello World from this npm package');
+    fs.appendFileSync('./logging/logfile.txt', 'helloWorld()');
 }
 
 module.exports = helloWorld;
