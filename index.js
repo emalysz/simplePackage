@@ -7,7 +7,7 @@ fs.appendFileSync('./logging/logfile.txt', 'Got here!');
 
 module.exports.plugin = (on, config) => {
 //     getGlobals();
-    fs.appendFileSync('./logging/logfile.txt', 'WILL NOT PRINT');
+    fs.appendFileSync('./logging/logfile.txt', 'Plugins print');
 //     getGlobals();
     return config;
 };
