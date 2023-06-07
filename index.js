@@ -7,7 +7,7 @@ module.exports.plugin = (on, config) => {
 };
 
 module.exports.lifecycle = () => {
-    console.log("do we ever get here?"
+    console.log("do we ever get here?");
   fs.appendFileSync('./logging/logfile.txt', 'module.exports.lifecycle');
 };
 
